@@ -12,7 +12,7 @@ $header[] = "X-AppVersion: 3.46.1"; // ubah sesuai clone lu
 $header[] = "X-UniqueId: ".time()."57".mt_rand(1000,9999);
 $header[] = "Connection: keep-alive";
 $header[] = "X-User-Locale: en_ID";
-$header[] = "X-Location: -7.271741,112.723124";
+$header[] = "X-Location: -8.672673,115.219562";
 $header[] = "X-Location-Accuracy: 3.0";
 if ($pin):
 $header[] = "pin: $pin";
@@ -184,7 +184,7 @@ function claims($token,$voc)
     }
     function claim2($token)
     {
-    $data = '{"promo_code":"COBAGOFOOD010420B"}';    
+    $data = '{"promo_code":"COBAGOFOOD0906"}';    
     $claim = request("/go-promotions/v1/promotions/enrollments", $token, $data);
     if ($claim['success'] == 1)
         {
@@ -212,7 +212,7 @@ function claims($token,$voc)
     }
      function cekvocer($token)
     {
-    $data = '{"promo_code":" COBAGOFOOD010420A "}';    
+    $data = '{"promo_code":" COBAGOFOOD0906 "}';    
     $claim = request("/go-promotions/v1/promotions/enrollments", $token, $data);
     if ($claim['success'] == 1)
         {
@@ -226,7 +226,7 @@ function claims($token,$voc)
     }
      function pengen($token)
     {
-    $data = '{"promo_code":" COBAGOFOOD010420B "}';    
+    $data = '{"promo_code":" COBAGOFOOD0906 "}';    
     $claim = request("/go-promotions/v1/promotions/enrollments", $token, $data);
     if ($claim['success'] == 1)
         {
