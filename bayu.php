@@ -59,7 +59,7 @@ if ($register == false)
             if ($claim == false) {
                 echo "\e[!]".$claim['data']['message']."\n";
                 sleep(3);
-                echo "\e[!] Trying to redeem Voucher : COBAGOFOOD010420A !\n";
+                echo "\e[!] Trying to redeem Voucher : COBAGOFOOD0906 !\n";
                 sleep(3);
                 goto next1;
             }
